@@ -1,0 +1,253 @@
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+/*Import your fonts above this line*/
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Lato;
+  font-size: 48px;
+  margin: 30px 0px 30px 0px;
+}
+
+h2 {
+  font-family: Lato;
+  font-size: 22px;
+  font
+}
+
+h3 {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+h4 {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+h5 {
+  font-family: Lato;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0px 20px 0px;
+}
+
+h6 {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 15px 0px 15px 0px;
+}
+
+hr{
+  color: #959695;
+}
+
+nav {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrolled {
+  background-color: white;
+}
+
+nav a {
+  font-family: Lato;
+  padding-left: 36px;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+nav img {
+  padding-top: 20px;
+  position: absolute;
+}
+
+nav div {
+  padding-top: 25px;
+}
+
+.banner {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 380px;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+main {
+  position: relative;
+  margin-top: 130px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.feature {
+  padding: 30px 65px 20px 65px
+}
+
+.feature a {
+  padding-left: 8px;
+  font-family: Lato;
+  font-size: 12px;
+  color: #1e8ed9;
+  text-decoration: none;
+}
+
+.arrow_right{
+  fill: #c8c8c8;
+  height: 70px;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+}
+
+.arrow_left{
+  fill: #c8c8c8;
+  height: 70px;
+  position: absolute;
+  top: 90px;
+  left: 20px;
+}
+
+.author {
+  display: relative;
+  margin-top: 4px;
+  display: inline-block;
+  width: 300px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  float: left;
+  margin-right: 15px;
+}
+
+.card-block {
+  max-width: 1100px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 21px;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 350px;
+  height: 460px;
+  border: 1px solid #959695;
+  background color: white;
+}
+
+.card-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.card a {
+  margin-top: 20px;
+  display: block;
+  font-family: Lato;
+  font-size: 12px;
+  color: #1e8ed9;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-content {
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  background-color: white;
+  width: 260px;
+  padding: 18px 20px 20px 20px;
+}
+
+footer {
+  text-align: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+footer a {
+  display: inline-block;
+  font-family: Lato;
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 25px 22px 25px 22px;
+}
+
+.social {
+  text-align: right;
+  display: block;
+  top: 30px;
+  right: 0;
+}
+
+.social img{
+  width: 25px;
+  margin-left: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------------------------------------
+Responsive Break Point : 900 px
+------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+  .card-block {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+/* ----------------------------------------
+Responsive Break Point : 680 px
+------------------------------------------- */
+
+@media screen and (max-width: 680px) {
+
+  .card-block {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
