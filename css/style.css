@@ -68,6 +68,7 @@ nav {
 }
 
 nav a {
+  padding-top: 25px;
   font-family: Lato;
   padding-left: 36px;
   font-size: 17px;
@@ -76,12 +77,22 @@ nav a {
   text-transform: lowercase;
 }
 
-nav img {
-  padding-top: 20px;
+#logo {
   position: absolute;
+  top: 20px;
 }
 
-nav div {
+#menu {
+ display: none;
+  position: absolute;
+  top: 22px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-menu {
+  display: block;
   padding-top: 25px;
 }
 
@@ -105,7 +116,7 @@ main {
 }
 
 .feature {
-  padding: 30px 65px 20px 65px
+  padding: 30px 65px 20px 65px;
 }
 
 .feature a {
@@ -154,6 +165,11 @@ main {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 21px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -229,16 +245,69 @@ img {
 }
 
 /* ----------------------------------------
-Responsive Break Point : 900 px
+Responsive Break Point : 1100 px
 ------------------------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
 
-  .card-block {
-    grid-template-columns: repeat(2,1fr);
-  }
+nav {
+  position: relative;
+  max-width: 90%;
+}
+
+main{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-block {
+  grid-template-columns: repeat(2,1fr);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.card {
+  margin-left: unset;
+  margin-right: unset;
+}
 
 }
+
+/* ----------------------------------------
+Responsive Break Point : 875 px
+------------------------------------------- */
+
+@media screen and (max-width: 875px) {
+
+#menu{
+  display: block;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+nav a {
+  display: block;
+padding-top: 35px;
+}
+
+.nav-menu{
+  margin-top: 35px;
+  display: block;
+  display: none;
+  max-width: 100%;
+}
+
+}
+
 
 /* ----------------------------------------
 Responsive Break Point : 680 px
