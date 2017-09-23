@@ -75,6 +75,7 @@ nav a {
   color: white;
   text-decoration: none;
   text-transform: lowercase;
+  text-shadow: grey 0.0em 0.1em .2em;
 }
 
 #logo {
@@ -82,13 +83,25 @@ nav a {
   top: 20px;
 }
 
+#logo:hover {
+  cursor: pointer;
+  fill: #1E88c3;
+  opacity: .9;
+}
+
 #menu {
- display: none;
+  display: none;
   position: absolute;
   top: 22px;
   right: 0px;
   width: 32px;
   height: 32px;
+}
+
+#menu:hover {
+  cursor: pointer;
+  fill: #1E88c3;
+  opacity: .9;
 }
 
 .nav-menu {
@@ -104,6 +117,11 @@ nav a {
   max-width: 100%;
   min-width: 100%;
   object-fit: cover;
+  display:none;
+}
+
+.banner:first-of-type {
+	display: block;
 }
 
 main {
@@ -117,7 +135,12 @@ main {
 
 .feature {
   padding: 30px 65px 20px 65px;
+  display: none;
 }
+.feature:first-of-type {
+	display: block;
+}
+
 
 .feature a {
   padding-left: 8px;
@@ -127,7 +150,7 @@ main {
   text-decoration: none;
 }
 
-.arrow_right{
+#next {
   fill: #c8c8c8;
   height: 70px;
   position: absolute;
@@ -135,12 +158,24 @@ main {
   right: 20px;
 }
 
-.arrow_left{
+#next:hover {
+  cursor: pointer;
+  fill: #1E88c3;
+  opacity: .7;
+}
+
+#previous{
   fill: #c8c8c8;
   height: 70px;
   position: absolute;
   top: 90px;
   left: 20px;
+}
+
+#previous:hover {
+  cursor: pointer;
+  fill: #1E88c3;
+  opacity: .7;
 }
 
 .author {
@@ -250,28 +285,28 @@ Responsive Break Point : 1100 px
 
 @media screen and (max-width: 1100px) {
 
-nav {
-  position: relative;
-  max-width: 90%;
-}
+  nav {
+    position: relative;
+    max-width: 90%;
+  }
 
-main{
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  main{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.card-block {
-  grid-template-columns: repeat(2,1fr);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-}
+  .card-block {
+    grid-template-columns: repeat(2,1fr);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
 
-.card {
-  margin-left: unset;
-  margin-right: unset;
-}
+  .card {
+    margin-left: unset;
+    margin-right: unset;
+  }
 
 }
 
@@ -281,30 +316,30 @@ Responsive Break Point : 875 px
 
 @media screen and (max-width: 875px) {
 
-#menu{
-  display: block;
-}
+  #menu{
+    display: block;
+  }
 
-h1 {
-  font-size: 36px;
-}
+  h1 {
+    font-size: 36px;
+  }
 
-h4 {
-  font-size: 16px;
-  line-height: 32px;
-}
+  h4 {
+    font-size: 16px;
+    line-height: 32px;
+  }
 
-nav a {
-  display: block;
-padding-top: 35px;
-}
+  nav a {
+    display: block;
+    padding-top: 35px;
+  }
 
-.nav-menu{
-  margin-top: 35px;
-  display: block;
-  display: none;
-  max-width: 100%;
-}
+  .nav-menu{
+    margin-top: 35px;
+    display: block;
+    display: none;
+    max-width: 100%;
+  }
 
 }
 
